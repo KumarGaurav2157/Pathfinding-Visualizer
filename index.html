@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Path Finder</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+  </head>
+  <body>
+    <div class="template">
+      <!-- ================ NAVIGATION BAR ============== -->
+      <header>
+        <nav>
+          <a href="./index.html" class="logo">Pathfinding Visualizer</a>
+          <button class="btn" id="visualize">Visualize</button>
+          <ul class="nav-menu">
+            <li><a id="clear-path" href="#">Clear Path</a></li>
+            <li><a id="clear-board" href="#">Clear Board</a></li>
+            <li><a id="generate-maze" href="#">Generate Maze</a></li>
+            <li id="pixel" class="drop-box">
+              <a class="drop-toggle" href="#"
+                >Pixel <span class="carret"></span
+              ></a>
+              <ul class="drop-menu">
+                <li><a href="#">14px</a></li>
+                <li><a href="#">16px</a></li>
+                <li><a href="#">18px</a></li>
+                <li><a href="#">20px</a></li>
+                <li class="active"><a href="#">22px</a></li>
+                <li><a href="#">24px</a></li>
+                <li><a href="#">26px</a></li>
+              </ul>
+            </li>
+            <li id="speed" class="drop-box">
+              <a class="drop-toggle" href="#"
+                >Speed <span class="carret"></span
+              ></a>
+              <ul class="drop-menu">
+                <li><a href="#">Slow</a></li>
+                <li class="active"><a href="#">Normal</a></li>
+                <li><a href="#">Fast</a></li>
+              </ul>
+            </li>
+            <li id="algo" class="drop-box">
+              <a class="drop-toggle" href="#"
+                >Algorithm <span class="carret"></span
+              ></a>
+              <ul class="drop-menu">
+                <li><a href="#">DFS</a></li>
+                <li class="active"><a href="#">BFS</a></li>
+                <li><a href="#">Dijkstra's algorithm</a></li>
+                <li><a href="#">Greedy best-first search</a></li>
+                <li><a href="#">A* algorithm</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- ================== GUIDE BAR ========================= -->
+        <ul class="guide-bar">
+          <li>
+            <span class="icon source"></span>
+            <span class="text">source</span>
+          </li>
+          <li>
+            <span class="icon target"></span>
+            <span class="text">target</span>
+          </li>
+          <li>
+            <span class="icon unvisited"></span>
+            <span class="text">unvisited</span>
+          </li>
+          <li>
+            <span class="icon visited"></span>
+            <span class="text">visited</span>
+          </li>
+          <li>
+            <span class="icon path"></span>
+            <span class="text">path</span>
+          </li>
+          <li>
+            <span class="icon wall"></span>
+            <span class="text">wall</span>
+          </li>
+        </ul>
+      </header>
+      <div id="board"></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
